@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+  --blue-dark: #020929;
+  --highlight: #bdbdbd;
+}
+
+.Form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.Form > input{
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  padding: 0.3rem;
+  width: 60%;
+  max-width: 60ch;
+  border-radius: 8px;
+  border: 1px solid rgba(177, 177, 177, 0.8);
+  background-color: #fff;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.Form > label {
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.Form > input:focus{
+  opacity: 0.75;
+}
+
+.container{
+  background-color: #e3e3e3;
+  width: 90vmin;
+  padding: 30px 30px 30px 30px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 10px;
+  box-shadow: 0 25px 50px rgba(7, 20, 35, 0.2);
+}
+
+.options{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+}
+
+.btn-txtEdit{
+  height: 50px;
+  width: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 3px;
+  border: none;
+  background-color: #e3e3e3;
+  outline: none;
+  color: var(--blue-dark);
+}
+
+button{
+  transition: 0.2s ease;
+}
+
+button:hover{
+  background-color: #d1d1d1;
+}
+
+button:active{
+  background-color: var(--highlight);
+}
+
+select{
+  padding: 7px;
+  border: 1px solid var(--blue-dark);
+  border-radius: 3px;
+}
+
+.options label, .options select{
+  font-family: "Poppins", sans-serif;
+}
+
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+select{
+  background-color: #d1d1d1;
+  border: none;
+  transition: 0.4s ease;
+  outline: none;
+}
+
+select:hover{
+  background-color: #b4b4b4;
+}
+
+input[type="color"]{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch{
+  border-radius: 15px;
+}
+
+input[type="color"]::-moz-color-swatch{
+  border-radius: 15px;
+}
+
+#text-input, #html-input{
+  margin: 10px auto;
+  width: 96%;
+  border: 1px solid #c2c2c2;
+  padding: 20px;
+  height: 50vh;
+  outline: #dddddd solid 1px;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+
+.active{
+  background-color: var(--highlight);
+}
+
+#modalImg, #modalHtml{
+  margin: auto auto;
+  border: 0;
+  overflow: hidden;
+  width: 50rem;
+  font-family: 'Arial', sans-serif;
+  font-size: 12pt;
+}
+
+#modalHtml{
+  width: 70rem;
+  padding: 1rem 1rem;
+  border-radius: 20px;
+  background-color: #e3e3e3;
+}
+
+#modalHtml > h1 {
+  text-align: center;
+}
+
+#html-input{
+  width: 60rem;
+}
+
+.buttonsHtmlEdit{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6em;
+}
+
+#Save{
+  background-color: rgb(4, 173, 55);
+  font-size: 1rem;
+  padding: 0.7em 0.7em;
+  border-radius: 20px;
+  color: #fff;
+  border: 0;
+  box-shadow: 0 0px 3px 3px rgba(25, 214, 82, 0.4);
+  cursor: pointer;
+}
+
+#Cancel{
+  background-color: rgb(173, 4, 60);
+  font-size: 1rem;
+  padding: 0.6em 0.6em;
+  border-radius: 20px;
+  color: #fff;
+  border: 0;
+  box-shadow: 0 0px 3px 3px rgba(173, 4, 60, 0.4);
+  cursor: pointer;
+}
+
+#Save:hover, #Cancel:hover{
+  opacity: 0.75;
+}
+
+dialog::backdrop{
+  background-color: rgba(126, 126, 126, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+.enviar{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.enviar > input{
+  padding: 1em 1em;
+  font-size: 1rem;
+  border-radius: 20px;
+  background-color: #f3f3f3;
+  border: 0;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.enviar > input:hover{
+  opacity: 0.8;
+}
+
+legenda{
+  font-size: 1rem;
+  font-style: italic;
+  color: #b1b1b1;
+}
+
+span {
+  text-align: center;
+  min-width: 50px;
+  font-size: 0.8rem;
+  display: none;
+  position: absolute;
+  color: #000;
+  background-color: #fff;
+  border-radius: 4px;
+  font-family: 'Poppins', cursive;
+}
+
+.italicSpan{
+  transform: translateX(5em);
+}
+
+.underlineSpan{
+  transform: translateX(10em);
+}
+
+.strikethroughSpan{
+  transform: translateX(15em);
+}
+
+.superscriptSpan{
+  transform: translateX(20em);
+}
+
+.subscriptSpan{
+  transform: translateX(25em);
+}
+
+.insertOrdenedSpan{
+  transform: translateX(30em);
+}
+
+.insertUnoderedSpan{
+  transform: translateX(35em);
+}
+
+.undoSpan{
+  transform: translateX(40.5em);
+}
+
+.redoSpan{
+  transform: translateX(45.7em);
+}
+
+.createLinkSpan{
+  transform: translateX(50.2em);
+}
+
+.unLinkSpan{
+  transform: translateX(55em);
+}
+
+.insertImageSpan{
+  transform: translateX(60em);
+}
+
+.editHtmlSpan{
+  transform: translateX(63em);
+}
+
+.justifyLeftSpan{
+  transform: translateX(68em);
+}
+
+.justifyCenterSpan{
+  transform: translateX(75.4em);
+}
+
+.justifyRightSpan{
+  transform: translateX(80em);
+}
+
+.justifyFullSpan{
+  transform: translateX(86em);
+}
+
+.outdentSpan{
+  transform: translateY(5em);
+  transform: translateX(5em);
+}
+
+#bold:hover ~ .boldSpan{
+  display:block;
+  animation: legendBlock 1s;
+}
+
+#italic:hover ~ .italicSpan{
+  display:block;
+  animation: legendBlock 1s;
+}
+
+#underline:hover ~ .underlineSpan{
+  display:block;
+  animation: legendBlock 1s;
+}
+
+#strikethrough:hover ~ .strikethroughSpan{
+  display:block;
+  animation: legendBlock 1s;
+}
+
+#superscript:hover ~ .superscriptSpan{
+  display:block;
+  animation: legendBlock 1s;
+}
+
+#subscript:hover ~ .subscriptSpan{
+  display:block;
+  animation: legendBlock 1s;
+}
+
+#insertOrdenedList:hover ~ .insertOrdenedSpan{
+  display:block;
+  animation: legendBlock 1s;
+}
+
+#insertUnoderedList:hover ~ .insertUnoderedSpan{
+  display:block;
+  animation: legendBlock 1s;
+}
+
+#undo:hover ~ .undoSpan{
+  display:block;
+  animation: legendBlock 1s;
+}
+
+#redo:hover ~ .redoSpan{
+  display:block;
+  animation: legendBlock 1s;
+}
+
+#createLink:hover ~ .createLinkSpan{
+  display:block;
+  animation: legendBlock 1s;
+}
+
+#unLink:hover ~ .unLinkSpan{
+  display:block;
+  animation: legendBlock 1s;
+}
+
+#insertImage:hover ~ .insertImageSpan{
+  display:block;
+  animation: legendBlock 1s;
+}
+
+#editHtml:hover ~ .editHtmlSpan{
+  display:block;
+  animation: legendBlock 1s;
+}
+
+#justifyLeft:hover ~ .justifyLeftSpan{
+  display:block;
+  animation: legendBlock 1s;
+}
+
+#justifyCenter:hover ~ .justifyCenterSpan{
+  display:block;
+  animation: legendBlock 1s;
+}
+
+#justifyRight:hover ~ .justifyRightSpan{
+  display:block;
+  animation: legendBlock 1s;
+}
+
+#justifyFull:hover ~ .justifyFullSpan{
+  display:block;
+  animation: legendBlock 1s;
+}
+
+#indent:hover ~ .indentSpan{
+  display:block;
+  animation: legendBlock 1s;
+}
+#outdent:hover ~ .outdentSpan{
+  display:block;
+  animation: legendBlock 1s;
+}
+
+@keyframes legendBlock{
+  0%{
+    opacity: 0;
+  }
+  70%{
+    opacity: 0;
+  }
+  80%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+}
