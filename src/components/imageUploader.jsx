@@ -78,10 +78,10 @@ function imageUploader() {
         </div>
         <div className='imgSize'>
             <label htmlFor="height" className='labelName'>Altura: </label>
-            <input type="text" name="height" id="imgheight" />
+            <input type="text" name="height" id="imgHeightLink" />
             <label htmlFor="height">px</label>
             <label htmlFor="width" className='labelName'>Largura: </label>
-            <input type="text" name="width" id="imgwidth" />
+            <input type="text" name="width" id="imgWidthLink" />
             <label htmlFor="width">px</label>
         </div>
         <p className="minimal">Deixe vazio para enviar o tamanho padrão.</p>
@@ -95,10 +95,10 @@ function imageUploader() {
         <img src="" alt="ImageUploaded" id='imgUploaded' />
         <div className='imgSize'>
             <label htmlFor="height" className='labelName'>Altura: </label>
-            <input type="text" name="height" id="imgheight" />
+            <input type="text" name="height" id="imgHeight" />
             <label htmlFor="height">px</label>
             <label htmlFor="width" className='labelName'>Largura: </label>
-            <input type="text" name="width" id="imgwidth" />
+            <input type="text" name="width" id="imgWidth" />
             <label htmlFor="width">px</label>
         </div>
         <p className="minimal">Deixe vazio para enviar o valor padrão.</p>

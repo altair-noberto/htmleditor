@@ -74,8 +74,8 @@ buttonCancel.forEach((button) => {
 
 buttonConfirm.addEventListener("click", () =>{
     const Link = document.getElementById('imageLink');
-    let imgHeight = document.getElementById('imgheight').value;
-    let imgWidth = document.getElementById('imgwidth').value;
+    const imgHeight = document.getElementById('imgHeight').value;
+    const imgWidth = document.getElementById('imgWidth').value;
     Link.select();
     Link.setSelectionRange(0, 99999);
     const imgUrl = Link.value;
@@ -87,8 +87,8 @@ buttonConfirm.addEventListener("click", () =>{
 
 buttonEnviarLink.addEventListener("click", () => {
     const Link = document.getElementById('imgLinkInsert');
-    const imgHeight = document.getElementById('imgheight').value;
-    const imgWidth = document.getElementById('imgwidth').value;
+    const imgHeight = document.getElementById('imgHeightLink').value;
+    const imgWidth = document.getElementById('imgWidthLink').value;
     Link.select();
     Link.setSelectionRange(0, 99999);
     const imgUrl = Link.value;

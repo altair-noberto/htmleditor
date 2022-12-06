@@ -39,7 +39,7 @@ function App() {
         <input type="text" name="title" id="title" placeholder='Titulo da publicação' />
         <input type="text" name="subtitle" id="subtitle" placeholder='Subtitulo da publicação' />
         <label htmlFor="imageInput">Banner da publicação</label>
-        <input type="file" name="imageInput" id="imageInput" />
+        <input type="file" accept="image/png, image/jpeg" name="imageInput" id="imageInput" />
       </div>
         <div className="options">
           <button id="bold" className="option-button btn-txtEdit format">
