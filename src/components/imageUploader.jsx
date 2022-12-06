@@ -67,7 +67,7 @@ function imageUploader() {
         <h1>Envie sua imagem</h1>
         <p id='statusError'>O arquivo precisa ser Png ou Jpeg</p>
         <div className="submitImg">
-          <input type="file" name="file" id="file" className='InsertImg' onChange={handleFile} />
+          <input type="file" accept="image/png, image/jpeg" name="file" id="file" className='InsertImg' onChange={handleFile} />
           <label htmlFor="file" className='labelImg'><img src={uploadImg} /><p>Clique ou arraste uma imagem aqui</p></label>
         </div>
         <p>Ou</p>
