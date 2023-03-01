@@ -38,7 +38,7 @@
 
 .container{
   background-color: #e3e3e3;
-  width: 90vmin;
+  width: 70vh;
   padding: 30px 30px 30px 30px;
   position: absolute;
   transform: translate(-50%, -50%);
