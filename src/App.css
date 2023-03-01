@@ -130,7 +130,7 @@ input[type="color"]::-moz-color-swatch{
   width: 96%;
   border: 1px solid #c2c2c2;
   padding: 20px;
-  height: 50vh;
+  height: 20vh;
   outline: #dddddd solid 1px;
   background-color: #fff;
   overflow-y: scroll;
